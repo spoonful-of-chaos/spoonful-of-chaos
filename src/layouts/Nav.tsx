@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 export const Nav = () => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState<boolean>();
 
   return (
     <header className="w-full">
@@ -24,11 +24,11 @@ export const Nav = () => {
           {open && (
             <div>
               <div className="fixed inset-0 z-10"></div>
-              <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-moonstone p-6 px-24 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-end">
-                  <button type="button" class="-m-2.5 rounded-md p-2.5 text-ghost" onClick={() => setOpen(false)}>
-                    <span class="sr-only">Close menu</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-moonstone p-6 px-24 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="flex items-center justify-end">
+                  <button type="button" className="-m-2.5 rounded-md p-2.5 text-ghost" onClick={() => setOpen(false)}>
+                    <span className="sr-only">Close menu</span>
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>

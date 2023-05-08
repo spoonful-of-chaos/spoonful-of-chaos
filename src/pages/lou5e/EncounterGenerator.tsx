@@ -7,9 +7,6 @@ import { WizardStep } from '@/components/WizardStep'
 import { MonsterProvider } from '@/context/monsters.context'
 import { SettingsProvider } from '@/context/settings.context'
 import { MainLayout } from '@/layouts/MainLayout'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function EncounterGenerator() {
   return (

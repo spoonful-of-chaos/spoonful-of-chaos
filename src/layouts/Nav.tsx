@@ -6,9 +6,9 @@ export const Nav = () => {
 
   return (
     <header className="w-full">
-      <nav className="flex text-spoon justify-between">
-        <button type="button" className="rounded-lg font-semibold font-lg leading-7 hover:text-moonstone">
-          <Link href="/">SoC</Link>
+        <nav className="flex text-ghost justify-between">
+        <button type="button" className="rounded-lg leading-7 hover:text-moonstone font-display text-left">
+          <Link href="/">A Spoonful of Chaos</Link>
         </button>
         <div>
           <button
@@ -17,19 +17,19 @@ export const Nav = () => {
             onClick={() => setOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </button>
           {open && (
             <div>
               <div className="fixed inset-0 z-10"></div>
-              <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-moonstone p-6 px-24 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-moonstone p-6 px-6 md:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div className="flex items-center justify-end">
                   <button type="button" className="-m-2.5 rounded-md p-2.5 text-ghost" onClick={() => setOpen(false)}>
                     <span className="sr-only">Close menu</span>
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>

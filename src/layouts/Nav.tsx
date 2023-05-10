@@ -8,7 +8,7 @@ export const Nav = () => {
     <header className="w-full">
         <nav className="flex text-ghost justify-between items-center">
         <button type="button" className="rounded-lg leading-7 hover:text-moonstone font-display text-left flex items-center">
-          <img src="/assets/chaos_spoon_horz_blkbg.jpg" className="w-20" />
+          <img src="/chaos_spoon_horz_blkbg.jpg" className="w-20" />
           <Link href="/">A Spoonful of Chaos</Link>
         </button>
         <div>

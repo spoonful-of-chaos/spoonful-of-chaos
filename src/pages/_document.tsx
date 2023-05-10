@@ -1,10 +1,12 @@
-import { Html, Main, NextScript } from 'next/document'
-import CustomHead from './_head'
+import { Html, Head, Main, NextScript } from 'next/document'
+import CustomFonts from './_head'
 
 export default function Document() {
   return (
     <Html>
-      <CustomHead />
+      <Head>
+        <CustomFonts />
+      </Head>
       <body>
         <Main />
         <NextScript />

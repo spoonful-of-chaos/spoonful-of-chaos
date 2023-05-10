@@ -8,7 +8,7 @@ import { MonsterProvider } from '@/context/monsters.context'
 import { SettingsProvider } from '@/context/settings.context'
 import { MainLayout } from '@/layouts/MainLayout'
 
-export default function EncounterGenerator() {
+const Encounters = () => {
   return (
     <MainLayout>
       <SettingsProvider>
@@ -32,3 +32,5 @@ export default function EncounterGenerator() {
     </MainLayout>
   )
 }
+
+export default Encounters;

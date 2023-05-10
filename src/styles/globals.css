@@ -12,7 +12,7 @@
   }
 
   h4 {
-    @apply font-display text-xl border-ghost border-b pb-2
+    @apply font-display text-xl border-ghost border-b-2 pb-2
   }
 
   h5 {
@@ -25,6 +25,22 @@
 
   ul {
     @apply text-ghost list-disc ml-4 mt-2
+  }
+
+  td, th {
+    @apply text-black text-left text-xs align-top py-2
+  }
+
+  th {
+    @apply font-black
+  }
+
+  tr {
+    @apply border-b border-black
+  }
+
+  tr:last-child {
+    @apply border-0
   }
 }
 

@@ -14,7 +14,7 @@ const ssp = Source_Serif_Pro({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${ssp.className} ${bebas.className}`}>
+    <div className={`${bebas.className} ${ssp.className}`}>
       <Component {...pageProps} />
     </div>
   )

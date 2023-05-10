@@ -12,9 +12,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'display': ['Bebas Neue', 'sans-serif'],
         'serif': ['Source Serif Pro'],
-        'display': ['Bebas Neue'],
-        'sans': [...defaultTheme.fontFamily.sans]
+        'sans': ['Source Serif Pro',...defaultTheme.fontFamily.sans]
       },
       colors: {
         ...colors,

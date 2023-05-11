@@ -1,5 +1,15 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
+
+const Logo = () => (
+  <Image
+    src="/chaos_spoon_horz_blkbg.jpg"
+    alt="the spoon itself"
+    width="80"
+    height="30"
+  />
+);
 
 export const Nav = () => {
   const [open, setOpen] = useState<boolean>();
@@ -8,7 +18,7 @@ export const Nav = () => {
     <header className="w-full">
         <nav className="flex text-ghost justify-between items-center">
         <button type="button" className="rounded-lg leading-7 hover:text-moonstone font-display text-left flex items-center">
-          <img src="/chaos_spoon_horz_blkbg.jpg" className="w-20" />
+          <Logo />
           <Link href="/">A Spoonful of Chaos</Link>
         </button>
         <div>

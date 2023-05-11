@@ -19,7 +19,7 @@ const Characters = () => {
       <h2 className="mt-12">Classes</h2>
       <div className="flex flex-col mt-8 md:grid md:grid-cols-3 md:gap-8">
         {Object.keys(classes)?.map((c: string, i: number) => (
-          <Card variant="ghost">
+          <Card variant="ghost" key={`class-${c}-${i}`}>
             <h5 className="text-black">{c.toUpperCase()}</h5>
             <p className="text-black">{classes[c].description}</p>
             <table className="mt-4">

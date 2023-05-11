@@ -20,7 +20,7 @@
   }
 
   p {
-    @apply font-serif text-ghost mt-4
+    @apply font-serif text-ghost mt-1
   }
 
   ul {
@@ -28,7 +28,7 @@
   }
 
   td, th {
-    @apply text-black text-left text-xs align-top py-2
+    @apply text-black text-left text-xs align-top py-2 pr-2
   }
 
   th {

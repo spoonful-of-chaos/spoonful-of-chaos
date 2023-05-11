@@ -20,25 +20,29 @@ const Characters = () => {
       <div className="flex flex-col mt-8 md:grid md:grid-cols-3 md:gap-8">
         {Object.keys(classes)?.map((c: string, i: number) => (
           <Card variant="ghost" key={`class-${c}-${i}`}>
-            <h5 className="text-black">{c.toUpperCase()}</h5>
+            <Link href={`/lou5e/classes/${c}`}>
+              <h5 className="text-moonstone hover:text-spoon">{c.toUpperCase()} <span aria-hidden="true">→</span></h5>
+            </Link>
             <p className="text-black">{classes[c].description}</p>
             <table className="mt-4">
-              <tr>
-                <th>Hit Die</th>
-                <td>{classes[c].hd}</td>
-              </tr>
-              <tr>
-                <th>Primary Ability</th>
-                <td>{classes[c].primary}</td>
-              </tr>
-              <tr>
-                <th>Saving Throw Proficiencies</th>
-                <td>{classes[c].throw_prof}</td>
-              </tr>
-              <tr>
-                <th>Armor & Weapon Proficiencies</th>
-                <td>{classes[c].armor_prof}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Hit Die</th>
+                  <td>{classes[c].hd}</td>
+                </tr>
+                <tr>
+                  <th>Primary Ability</th>
+                  <td>{classes[c].primary}</td>
+                </tr>
+                <tr>
+                  <th>Saving Throw Proficiencies</th>
+                  <td>{classes[c].throw_prof}</td>
+                </tr>
+                <tr>
+                  <th>Armor & Weapon Proficiencies</th>
+                  <td>{classes[c].armor_prof}</td>
+                </tr>
+              </tbody>
             </table>
           </Card>
         ))}

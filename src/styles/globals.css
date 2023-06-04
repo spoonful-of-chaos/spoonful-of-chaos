@@ -27,12 +27,32 @@
     @apply font-display text-lg text-ghost
   }
 
+  h6 {
+    @apply font-bold italic
+  }
+
   p {
-    @apply font-serif text-ghost mt-1
+    @apply font-serif text-ghost mb-3
+  }
+
+  a {
+    @apply text-crayola
+  }
+
+  a:hover {
+    @apply text-spoon
+  }
+
+  a:visited, a:active {
+    @apply text-moonstone
+  }
+
+  a.ghosted, a.ghosted:hover, a.ghosted:visited, a.ghosted:active{
+    @apply text-ghost
   }
 
   ul {
-    @apply text-ghost list-disc ml-4 mt-2
+    @apply text-ghost list-disc ml-4 mb-2
   }
 
   td, th {

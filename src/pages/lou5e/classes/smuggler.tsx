@@ -55,23 +55,27 @@ const Smuggler = () => {
         <div>
           <h4 className="h4-moon">Hit Points</h4>
           <table className="w-full">
-            {SmugglerHitPoints.map((c, i) => (
-              <tr key={`smuggler-${c.label}-${i}`} className="border-b border-ghost">
-                <th className="text-ghost px-0">{c.label}</th>
-                <td className="text-ghost">{c.val}</td>
-              </tr>
-            ))}
+            <tbody>
+              {SmugglerHitPoints.map((c, i) => (
+                <tr key={`smuggler-${c.label}-${i}`} className="border-b border-ghost">
+                  <th className="text-ghost px-0">{c.label}</th>
+                  <td className="text-ghost">{c.val}</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
         <div>
           <h4 className="h4-moon">Proficiencies</h4>
           <table className="w-full">
-            {SmugglerProfs.map((c, i) => (
-              <tr key={`smuggler-${c.label}-${i}`} className="border-b border-ghost">
-                <th className="text-ghost px-0">{c.label}</th>
-                <td className="text-ghost">{c.val}</td>
-              </tr>
-            ))}
+            <tbody>
+              {SmugglerProfs.map((c, i) => (
+                <tr key={`smuggler-${c.label}-${i}`} className="border-b border-ghost">
+                  <th className="text-ghost px-0">{c.label}</th>
+                  <td className="text-ghost">{c.val}</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>

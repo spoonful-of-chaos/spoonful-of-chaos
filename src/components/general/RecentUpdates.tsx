@@ -25,6 +25,7 @@ export const RecentUpdates = () => {
             <span className="text-xl font-display">Last of Us</span>
             <ul>
               <li>Finalized Smuggler class through level 5</li>
+              <li>Finalized Survivor class through level 5</li>
             </ul>
           </Card>
         </div>

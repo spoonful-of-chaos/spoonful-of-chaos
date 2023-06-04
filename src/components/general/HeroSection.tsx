@@ -17,16 +17,16 @@ export const HeroSection = () => {
         <NavigationButton link="/lou5e/encounters">
           Encounter Generator
         </NavigationButton>
-        <NavigationButton link="/" variant="coming-soon">
+        <NavigationButton disabled link="/">
           Coming Soon: Cantrips & Crafting
         </NavigationButton>
-        <NavigationButton link="/" variant="coming-soon">
+        <NavigationButton disabled link="/">
           Coming Soon: Gameplay Rules
         </NavigationButton>
-        <NavigationButton link="/" variant="coming-soon">
+        <NavigationButton disabled link="/">
           Coming Soon: Equipment & Items
         </NavigationButton>
-        <NavigationButton link="/" variant="coming-soon">
+        <NavigationButton disabled link="/">
           Coming Soon: Appendix A: Creature Stat Blocks
         </NavigationButton>
       </div>

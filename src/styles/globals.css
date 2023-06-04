@@ -1,10 +1,10 @@
 @layer base {
   h1 {
-    @apply font-display text-crayola text-4xl
+    @apply font-display text-spoon text-4xl
   }
 
   h2 {
-    @apply text-spoon font-display text-3xl
+    @apply text-spoon font-display text-3xl my-2
   }
 
   h3 {
@@ -12,7 +12,15 @@
   }
 
   h4 {
-    @apply font-display text-xl border-ghost border-b-2 pb-2
+    @apply font-display text-xl border-ghost border-b pb-2 mb-2
+  }
+
+  .h4-moon {
+    @apply font-display text-xl border-moonstone border-b pb-2 mb-2 text-moonstone
+  }
+
+  .h4-crayola {
+    @apply font-display text-xl border-crayola border-b pb-2 mb-2 text-crayola
   }
 
   h5 {
@@ -28,7 +36,7 @@
   }
 
   td, th {
-    @apply text-black text-left text-xs align-top py-2 pr-2
+    @apply text-black text-left text-xs align-top py-2 px-2
   }
 
   th {
@@ -41,6 +49,26 @@
 
   tr:last-child {
     @apply border-0
+  }
+
+  .reverse-spoon {
+    @apply bg-spoon text-ghost w-full p-2
+  }
+
+  .reverse-moon {
+    @apply bg-moonstone text-ghost w-full p-2
+  }
+
+  .reverse-crayola {
+    @apply bg-crayola text-ghost w-full p-2
+  }
+
+  .reverse-ghost {
+    @apply bg-ghost text-black w-full p-2
+  }
+
+  .class-col-layout {
+    @apply md:grid md:grid-flow-col md:gap-8 md:grid-cols-2
   }
 }
 

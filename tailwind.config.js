@@ -24,7 +24,7 @@ module.exports = {
         },
         'ghost': '#e8e9f3',
         'moonstone': '#429EA6',
-        'crayola': '#F45B69'
+        'crayola': '#FF7538'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

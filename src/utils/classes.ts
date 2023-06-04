@@ -35,3 +35,91 @@ export const classes: Record<string, Record<string, string>> = {
     armor_prof: 'Simple weapons, knives, handguns'
   }
 }
+
+export const ClassHPLabels = {
+  hitDice: 'Hit Dice:',
+  firstLvlHP: 'Hit Points at 1st Level:',
+  higherLvlHP: 'Hit Points at Higher Levels:',
+  craftAbility: 'Item Crafting Ability:'
+}
+
+export const ClassProfLabels = {
+  armor: 'Armor:',
+  weapons: 'Weapons:',
+  tools: 'Tools:',
+  throw: 'Saving Throws:',
+  skills: 'Skills:'
+}
+
+export const SmugglerConfig: Record<string, string | number>[] = [
+  {
+    level: 1,
+    prof: 2,
+    features: "Crafting, Fighting Style",
+    cantrips: 2,
+    points: "-"
+  },
+  {
+    level: 2,
+    prof: 2,
+    features: "Focus, Jack of All Trades",
+    cantrips: 2,
+    points: "-"
+  },
+  {
+    level: 3,
+    prof: 2,
+    features: "Expertise",
+    cantrips: 2,
+    points: "-"
+  },
+  {
+    level: 4,
+    prof: 2,
+    features: "Ability Score Improvement, Focus Improvement",
+    cantrips: 3,
+    points: "-"
+  },
+  {
+    level: 5,
+    prof: 3,
+    features: "Smuggler Points",
+    cantrips: 3,
+    points: 2
+  }
+]
+
+export const SmugglerHitPoints = [
+  {
+    label: ClassHPLabels.hitDice,
+    val: '1d8 per class level'
+  }, {
+    label: ClassHPLabels.firstLvlHP,
+    val: '8 + your Constitution modifier'
+  }, {
+    label: ClassHPLabels.higherLvlHP,
+    val: '1d8 + your Constitution modifier per class level after 1st'
+  }, {
+    label: ClassHPLabels.craftAbility,
+    val: 'Charisma'
+  }
+]
+
+export const SmugglerProfs = [
+  {
+    label: ClassProfLabels.armor,
+    val: 'none'
+  }, {
+    label: ClassProfLabels.weapons,
+    val: 'Handguns, rifles, simple weapons, hand-to-hand'
+  }, {
+    label: ClassProfLabels.tools,
+    val: 'none'
+  }, {
+    label: ClassProfLabels.throw,
+    val: 'Dexterity & Charisma'
+  }, {
+    label: ClassProfLabels.skills,
+    val: 'Choose two skills from Athletics, Arcana/Crafting, Deception, Investigation, Intimidation, Persuasion, Stealth'
+  }
+];

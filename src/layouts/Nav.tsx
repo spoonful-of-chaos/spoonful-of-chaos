@@ -45,7 +45,9 @@ export const Nav = () => {
                   </button>
                 </div>
                 <div className="mt-6 flow-root space-y-2">
-                  <Link className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-ghost hover:bg-ghost hover:text-moonstone" href="/lou5e">LoU 5e</Link>
+                  <Link href="/">Home</Link>
+                  <Link href="/lou5e">The Last of Us 5e Campaign Setting</Link>
+                  <Link href="/blog">Blog</Link>
                 </div>
               </div>
             </div>

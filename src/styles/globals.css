@@ -51,6 +51,18 @@
     @apply text-ghost
   }
 
+  nav a {
+    @apply text-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
+  }
+
+  nav a:visited {
+    @apply text-ghost
+  }
+
+  nav a:hover, a:active {
+    @apply text-moonstone bg-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
+  }
+
   ul {
     @apply text-ghost list-disc ml-4 mb-2
   }

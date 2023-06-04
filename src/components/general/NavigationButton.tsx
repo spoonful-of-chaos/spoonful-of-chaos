@@ -5,7 +5,7 @@ export const NavigationButton = ({ children, link, disabled }: any) => {
   const [isDisabled, setDisabled] = useState('hover:bg-spoon hover:text-ghost');
 
   useEffect(() => {
-    setDisabled(disabled ? 'bg-crayola' : 'bg-moonstone hover:bg-spoon hover:text-ghost')
+    setDisabled(disabled ? 'bg-crayola' : 'bg-moonstone hover:bg-ghost')
   })
 
   return (

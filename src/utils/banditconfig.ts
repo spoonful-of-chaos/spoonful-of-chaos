@@ -27,13 +27,13 @@ export const BanditConfig: Record<string, string | number>[] = [
 export const BanditHitPoints = [
   {
     label: ClassHPLabels.hitDice,
-    val: '1dd per class level'
+    val: '1d8 per class level'
   }, {
     label: ClassHPLabels.firstLvlHP,
-    val: 'd + your Constitution modifier'
+    val: 'd8 + your Constitution modifier'
   }, {
     label: ClassHPLabels.higherLvlHP,
-    val: '1dd + your Constitution modifier per class level after 1st'
+    val: '1d8 + your Constitution modifier per class level after 1st'
   }
 ]
 

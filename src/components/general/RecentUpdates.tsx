@@ -26,6 +26,7 @@ export const RecentUpdates = () => {
             <ul>
               <li>Finalized Smuggler class through level 5</li>
               <li>Finalized Survivor class through level 5</li>
+              <li>Finalized Prepper class through level 5</li>
             </ul>
           </Card>
         </div>

@@ -1,5 +1,5 @@
 import { ClassBreadcrumb } from "@/components/LastofUs/ClassBreadcrumb";
-import { SmugglerConfig, SmugglerHitPoints, SmugglerProfs, SurvivorConfig, SurvivorHitPoints, SurvivorProfs } from "@/utils/classes";
+import { SurvivorConfig, SurvivorHitPoints, SurvivorProfs } from "@/utils/survivorconfig";
 import Link from "next/link";
 
 const Survivor = () => {
@@ -38,7 +38,7 @@ const Survivor = () => {
           </thead>
           <tbody>
             {SurvivorConfig.map((c: Record<string, string | number>, i: number) => (
-              <tr key={`smuggler-features-${c.level}-${i}`}>
+              <tr key={`survivor-features-${c.level}-${i}`}>
                 <td className="text-ghost border-ghost border">{c.level}</td>
                 <td className="text-ghost border-ghost border">+{c.prof}</td>
                 <td className="text-ghost border-ghost border">{c.feats}</td>
@@ -49,14 +49,14 @@ const Survivor = () => {
         </table>
       </div>
       <h3 className="mt-8 mb-2 reverse-moon">Class Features</h3>
-      <p>As a Smuggler, you gain the following class features.</p>
+      <p>As a Survivor, you gain the following class features.</p>
       <div className="class-col-layout mt-4">
         <div>
           <h4 className="h4-moon">Hit Points</h4>
           <table className="w-full">
             <tbody>
               {SurvivorHitPoints.map((c, i) => (
-                <tr key={`smuggler-${c.label}-${i}`} className="border-b border-ghost">
+                <tr key={`survivor-${c.label}-${i}`} className="border-b border-ghost">
                   <th className="text-ghost px-0">{c.label}</th>
                   <td className="text-ghost">{c.val}</td>
                 </tr>
@@ -69,7 +69,7 @@ const Survivor = () => {
           <table className="w-full">
             <tbody>
               {SurvivorProfs.map((c, i) => (
-                <tr key={`smuggler-${c.label}-${i}`} className="border-b border-ghost">
+                <tr key={`survivor-${c.label}-${i}`} className="border-b border-ghost">
                   <th className="text-ghost px-0">{c.label}</th>
                   <td className="text-ghost">{c.val}</td>
                 </tr>
@@ -79,19 +79,19 @@ const Survivor = () => {
         </div>
       </div>
       <h4 className="h4-moon">Equipment</h4>
-          <p>
-            You start with the following equipment, in addition to the equipment granted by your background:
-          </p>
-          <ul>
-              <li>(a) Hatchet or (b) 5x water purification tablets</li>
-              <li>(a) 3x shivs or (b) bushcraft kit which contains:</li>
-                <ul>
-                  <li>3x rags</li>
-                  <li>1x alcohol</li>
-                  <li>hunting knife</li>
-                </ul>
-              <li>(a) Quiver with 5x arrows or (b) 1x bandages</li>
-            </ul>
+      <p>
+        You start with the following equipment, in addition to the equipment granted by your background:
+      </p>
+      <ul>
+        <li>(a) Hatchet or (b) 5x water purification tablets</li>
+        <li>(a) 3x shivs or (b) bushcraft kit which contains:</li>
+        <ul>
+          <li>3x rags</li>
+          <li>1x alcohol</li>
+          <li>hunting knife</li>
+        </ul>
+        <li>(a) Quiver with 5x arrows or (b) 1x bandages</li>
+      </ul>
       <div className="class-col-layout">
         <div>
 
@@ -167,14 +167,14 @@ const Survivor = () => {
           <p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 6 feet of the original target and within range of your weapon.</p>
         </div>
         <div>
-          <h4 className="my-4 h4-crayola">Beast Master</h4>   
+          <h4 className="my-4 h4-crayola">Beast Master</h4>
           <p>The Beast Master archetype embodies an extraordinary friendship between the survivor and a special animal.</p>
           <h5 className="mt-2 text-crayola">Survivor’s Companion</h5>
           <p>At 5th level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose one of the beasts from <Link href="/lou5e/appendix-a">Appendix A</Link>. Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number it its stat block or four times your survivor level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
-          <p>The beast obeys your commands as best it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to Attack, Dash, Disengage, or Help. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action. If you don’t issue a command, the beast takes the Dodge action.</p> 
+          <p>The beast obeys your commands as best it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to Attack, Dash, Disengage, or Help. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action. If you don’t issue a command, the beast takes the Dodge action.</p>
           <p>If you are incapacitated or absent, the beast acts on its own, focusing on protecting you and itself. The beast never requires your command to use its reaction, such as when making an opportunity attack.</p>
           <p>While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.</p>
-          <p>If the beast dies, you can obtain a new companion by spending 8 hours bonding with a beast that isn’t hostile to you.</p>     
+          <p>If the beast dies, you can obtain a new companion by spending 8 hours bonding with a beast that isn’t hostile to you.</p>
         </div>
       </div>
     </>

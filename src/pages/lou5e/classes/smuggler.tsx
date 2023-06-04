@@ -1,5 +1,5 @@
 import { ClassBreadcrumb } from "@/components/LastofUs/ClassBreadcrumb";
-import { SmugglerConfig, SmugglerHitPoints, SmugglerProfs } from "@/utils/classes";
+import { SmugglerConfig, SmugglerHitPoints, SmugglerProfs } from "@/utils/smugglerconfig";
 
 const Smuggler = () => {
   return (
@@ -41,7 +41,7 @@ const Smuggler = () => {
               <tr key={`smuggler-features-${c.level}-${i}`}>
                 <td className="text-ghost border-ghost border">{c.level}</td>
                 <td className="text-ghost border-ghost border">+{c.prof}</td>
-                <td className="text-ghost border-ghost border">{c.features}</td>
+                <td className="text-ghost border-ghost border">{c.feats}</td>
                 <td className="text-ghost border-ghost border">{c.cantrips}</td>
                 <td className="text-ghost border-ghost border">{c.points}</td>
               </tr>

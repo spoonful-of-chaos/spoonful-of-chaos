@@ -5,15 +5,16 @@ const Prepper = () => {
   return (
     <>
       <ClassBreadcrumb />
-      <h1 className="reverse-spoon mb-4">Smuggler</h1>
+      <h1 className="reverse-spoon mb-4">Prepper</h1>
       <div className="class-col-layout">
         <div>
           <p>A young woman rushes onto the field, dodging infected to get to the downed soldier. Bullets whisk past her head as she crouches to administer emergency first aid. A runner swings its claws at her and she spins, knocking its arms out of the way with her rifle and firing a quick shot into its chest.</p>
           <p>A old man hums to himself at the top of a building. Raiders are attempting to sneak through the barriers he&apos;s created below, but they don&apos;t realize they&apos;ve already tripped his alarm wires. He takes aim and fires.</p>
-        </div>
-        <div>
           <h2>A Lifetime Preparing</h2>
           <p>They&apos;ve stocked up, rationed, planned. They know what kind of wire will last the longest while carrying the voltage for an electric fence. They know which plants are edible in the wilds and how to cook them. They can macgyver together traps out of just about anything. They are prepped.</p>
+        </div>
+        <div>
+
           <h2 className="reverse-spoon">Creating a Prepper</h2>
           <p>Preppers usually began their accumulation of knowledge prior to the outbreak of the Cordyceps Brain Infection. When creating a prepper, consider whether they learned their abilities on their own or with a teacher. Do they skew more towards medical applications or survival?</p>
         </div>

@@ -18,17 +18,18 @@ export const RecentUpdates = () => {
             <span className="text-xl font-display">Last of Us</span>
             <ul>
               <li>Additional class information</li>
+              <li>Added encounter generator: the goal of this is to provide balanced encounters within the world of <span className="italics">The Last of Us</span>. I&apos;ll probably update this in the future to include more general monsters.</li>
             </ul>
           </Card>
           <Card>
             <p className="italic mb-2">Sun, June 4, 2023</p>
             <span className="text-xl font-display">Last of Us</span>
             <ul>
-              <li>Finalized Smuggler class through level 5</li>
-              <li>Finalized Survivor class through level 5</li>
-              <li>Finalized Prepper class through level 5</li>
-              <li>Finalized Soldier class through level 5</li>
-              <li>Finalized Bandit class through level 5</li>
+              <li>Added Smuggler class</li>
+              <li>Added Survivor class</li>
+              <li>Added Prepper class</li>
+              <li>Added Soldier class</li>
+              <li>Added Bandit class</li>
             </ul>
           </Card>
         </div>

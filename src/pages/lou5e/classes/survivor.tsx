@@ -13,17 +13,17 @@ const Survivor = () => {
             A young boy crouches in the shadows of the trees as a horde of runners shuffles slowly below him. He raises his bow and releases a flurry of arrows, each one finding their mark in the brain of each infected. He never needs to aim at the same infected twice.
           </p>
           <p>
-            A girl wearing a bandana bends to inspect the trail she's following through this suburban neighborhood, quickly assessing the raiding party's numbers and strength. She knows they've been here about 3 days, collecting what they can from the houses nearby while dispatching infected. She's watched their guard rotations. She insures her knife is secure at her side as she stalks up to the camp. The raiders never even notice her taking the food.
+            A girl wearing a bandana bends to inspect the trail she&apos;s following through this suburban neighborhood, quickly assessing the raiding party&apos;s numbers and strength. She knows they&apos;ve been here about 3 days, collecting what they can from the houses nearby while dispatching infected. She&apos;s watched their guard rotations. She insures her knife is secure at her side as she stalks up to the camp. The raiders never even notice her taking the food.
           </p>
           <p>
-            A woman whistles sharply as she takes aim with her bow at the approaching raiders. From the shadows, a german shepard launches itself at the nearest one, grabbing him by the arm and throwing him to the ground. The other raider raises his gun to fire at the dog when an arrow finds it's mark in his chest. Another whistle and the dog returns to the woman's side as they both escape into the maze of crumbling buildings around them.
+            A woman whistles sharply as she takes aim with her bow at the approaching raiders. From the shadows, a german shepard launches itself at the nearest one, grabbing him by the arm and throwing him to the ground. The other raider raises his gun to fire at the dog when an arrow finds it&apos;s mark in his chest. Another whistle and the dog returns to the woman&apos;s side as they both escape into the maze of crumbling buildings around them.
           </p>
         </div>
         <div>
           <h2>Save Who You Can Save</h2>
           <p>Maybe they’re lucky. Maybe they’re good. Somehow, the survivor is still here. The simple tenant of the survivor is that the infected can’t kill you unless they hear you and get close to you. Let’s make sure they don’t get close. Let’s stay quiet.</p>
           <h2>Knowledge is Power</h2>
-          <p>Survivors study their surroundings, enemies, and prey thoroughly before taking action. What they learn, they don't tend to forget, building that knowledge into an innate sense of the world around them. In these changing times, their ability to absorb this information and remain flexible in their actions is powerful.</p>
+          <p>Survivors study their surroundings, enemies, and prey thoroughly before taking action. What they learn, they don&apos;t tend to forget, building that knowledge into an innate sense of the world around them. In these changing times, their ability to absorb this information and remain flexible in their actions is powerful.</p>
           <h2 className="reverse-spoon">Creating a Survivor</h2>
           <p>Where a surivor learned their skills shapes their abilities and perceptions of the world. Something happened to them to make them realize that they are the predator in a world of prey.</p>
         </div>
@@ -135,11 +135,11 @@ const Survivor = () => {
 
           <h4 className="my-4 h4-crayola">Favored Terrain</h4>
           <p>You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions.</p>
-          <p>Choose one type of favored terrain: city, suburb, rural, coastline. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.</p>
+          <p>Choose one type of favored terrain: city, suburb, rural, coastline. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you&apos;re proficient in.</p>
           <p>While traveling for an hour or more in your favored terrain, you gain the following benefits:</p>
           <ul>
-            <li>Difficult terrain doesn't slow your group's travel.</li>
-            <li>Your group can't become lost unless tricked.</li>
+            <li>Difficult terrain doesn&apos;t slow your group&apos;s travel.</li>
+            <li>Your group can&apos;t become lost unless tricked.</li>
             <li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
             <li>If you are traveling alone, you can move stealthily at a normal pace.</li>
             <li>When you forage, you find twice as much food as you normally would.</li>

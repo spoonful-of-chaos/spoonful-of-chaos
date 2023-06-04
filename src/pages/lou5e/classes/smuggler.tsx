@@ -18,13 +18,13 @@ const Smuggler = () => {
             The young man breathes in and exhales slowly before pulling the trigger on the rifle braced against his shoulder. The runner chasing his partner collapses on the ground.
           </p>
           <h2>Charismatic Fighters</h2>
-          <p>Smugglers are hardened salesmen and traders that do whatever it takes to make it another day, selling and bartering with whatever they can get their hands on. In this world, it's not uncommon for deals to go wrong, and smugglers are more than used to putting a bullet right between a thief's eyes.</p>
+          <p>Smugglers are hardened salesmen and traders that do whatever it takes to make it another day, selling and bartering with whatever they can get their hands on. In this world, it&apos;s not uncommon for deals to go wrong, and smugglers are more than used to putting a bullet right between a thief&apos;s eyes.</p>
         </div>
         <div>
           <h2>Learning From Experience</h2>
-          <p>Smugglers don’t settle in one place for too long, relying on safe routes known only to them in and out of major cities. While most of the world huddles within Quarantine Zones, smugglers are some of the only people with working knowledge of the infected, giving them an edge in avoiding or attacking them.</p>
+          <p>Smugglers don&apos;t settle in one place for too long, relying on safe routes known only to them in and out of major cities. While most of the world huddles within Quarantine Zones, smugglers are some of the only people with working knowledge of the infected, giving them an edge in avoiding or attacking them.</p>
           <h2 className="reverse-spoon">Creating a Smuggler</h2>
-          <p>Smugglers put on a charming mask to get their job done, but they get into their line of work for a reason. They might have a background to hide or someone they’re running from. Your background is a well-kept secret, known only to those you truly trust, but probably isn’t a kind one.</p>
+          <p>Smugglers put on a charming mask to get their job done, but they get into their line of work for a reason. They might have a background to hide or someone they&apos;re running from. Your background is a well-kept secret, known only to those you truly trust, but probably isn&apos;t a kind one.</p>
         </div>
       </div>
       <div className="w-full mt-4">

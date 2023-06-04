@@ -20,11 +20,16 @@ module.exports = {
         ...colors,
         'spoon': {
           DEFAULT: '#ec3c7b',
-          light: '#F8B5CC'
+          light: '#F8B5CC',
+          dark: '#CC1455'
         },
         'ghost': '#e8e9f3',
-        'moonstone': '#429EA6',
-        'crayola': '#FF7538'
+        'moonstone': {
+          DEFAULT: '#429EA6',
+          light: '#8ACBD0',
+          dark: '#347D83'
+        },
+        'crayola': '#FF7E47'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

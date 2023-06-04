@@ -48,18 +48,26 @@
   }
 
   a.ghosted, a.ghosted:hover, a.ghosted:visited, a.ghosted:active{
-    @apply text-ghost
-  }
-
-  nav a {
-    @apply text-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
+    @apply text-black
   }
 
   nav a:visited {
+    @apply text-spoon
+  }
+
+  nav a:hover {
+    @apply text-moonstone
+  }
+
+  .nav-item {
+    @apply text-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
+  }
+
+  .nav-item:visited {
     @apply text-ghost
   }
 
-  nav a:hover, a:active {
+  .nav-item:hover, .nav-item:active {
     @apply text-moonstone bg-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
   }
 
@@ -88,11 +96,11 @@
   }
 
   .reverse-moon {
-    @apply bg-moonstone text-ghost w-full p-2
+    @apply bg-moonstone text-black w-full p-2
   }
 
   .reverse-crayola {
-    @apply bg-crayola text-ghost w-full p-2
+    @apply bg-crayola text-black w-full p-2
   }
 
   .reverse-ghost {
@@ -102,6 +110,7 @@
   .class-col-layout {
     @apply md:grid md:grid-flow-col md:gap-8 md:grid-cols-2
   }
+
 }
 
 :root {

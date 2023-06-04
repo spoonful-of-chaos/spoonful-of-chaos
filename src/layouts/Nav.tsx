@@ -45,9 +45,9 @@ export const Nav = () => {
                   </button>
                 </div>
                 <div className="mt-6 flow-root space-y-2">
-                  <Link href="/">Home</Link>
-                  <Link href="/lou5e">The Last of Us 5e Campaign Setting</Link>
-                  <Link href="/blog">Blog</Link>
+                  <Link className="nav-item" href="/">Home</Link>
+                  <Link className="nav-item" href="/lou5e">The Last of Us 5e Campaign Setting</Link>
+                  <Link className="nav-item" href="/blog">Blog</Link>
                 </div>
               </div>
             </div>

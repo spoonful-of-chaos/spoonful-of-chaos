@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
+import { Navigation } from '@/utils/navigation';
 
 const Logo = () => (
   <Image
@@ -45,9 +46,9 @@ export const Nav = () => {
                   </button>
                 </div>
                 <div className="mt-6 flow-root space-y-2">
-                  <Link className="nav-item" href="/">Home</Link>
-                  <Link className="nav-item" href="/lou5e">The Last of Us 5e Campaign Setting</Link>
-                  <Link className="nav-item" href="/blog">Blog</Link>
+                  {Navigation.map((c, i) => (
+                    <Link key={`nav-${c}-${i}`} className="nav-item" href={c.link}>{c.text}</Link>
+                  ))}
                 </div>
               </div>
             </div>

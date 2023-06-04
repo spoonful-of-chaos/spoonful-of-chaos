@@ -22,9 +22,9 @@ export const MonsterCard = ({ monster }: { monster: Monster }) => {
   }
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <div className="px-6 py-3">
-          <div className="font-bold text-lg mb-2">{monster.name}</div>
+    <div className="max-w-sm">
+        <div className="py-3">
+          <p className="mb-2 font-semibold">{monster.name}</p>
           <span className={determineBgColor(monster.cr)}>CR: {monster.cr}</span>
           <span className={determineBgColor(monster.type)}>type: {monster.type}</span>
         </div>

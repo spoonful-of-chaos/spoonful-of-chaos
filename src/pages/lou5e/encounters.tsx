@@ -12,16 +12,18 @@ const Encounters = () => {
     <SettingsProvider>
       <MonsterProvider>
         <WizardContainer>
-          <div className="grid grid-cols-4 gap-4">
+          <h2 className='text-moonstone mb-4'>Adventure Day Encounter Set Generator</h2>
+          <div className="md:grid md:grid-cols-4 md:gap-4">
             <WizardStep>
               <DayControl />
-              <EncounterSet />
+              <EncounterSet className="md:col-span-3 md:grid md:grid-cols-3 md:gap-4" />
             </WizardStep>
           </div>
-          <div className="mt-8 grid grid-cols-4 gap-4">
+          <h2 className='text-moonstone mt-12 mb-4'>Encounter Generator</h2>
+          <div className="md:grid md:grid-cols-4 md:gap-4">
             <WizardStep>
               <EncounterControl />
-              <MonsterSet />
+              <MonsterSet className="md:col-span-3 md:grid md:grid-cols-3 md:gap-4" />
             </WizardStep>
           </div>
         </WizardContainer>

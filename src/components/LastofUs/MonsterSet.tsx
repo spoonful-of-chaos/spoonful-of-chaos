@@ -1,16 +1,17 @@
 import { useSettings } from "@/context/settings.context";
 import { MonsterGroup } from "./MonsterGroup";
+import { Card } from "../general/Card";
 
-export const MonsterSet = () => {
+export const MonsterSet = (props: any) => {
   const { state } = useSettings();
   return (
-    <>
+    <div {...props}>
       {state?.monsterSets && state.monsterSets.map((m, i) => (
-        <div key={`monsterSet${i}`} className="max-w-sm mx-4">
-          <h2 className="px-6 text-xl font-bold">Potential Monster Group {i + 1}</h2>
+        <Card key={`monsterSet${i}`} className="max-w-sm mx-4" variant="black">
+          <h6>Potential Monster Group {i + 1}</h6>
           <MonsterGroup key={`monsterGroup${i}`} monsters={m} groupIndex={i} />
-        </div>
+        </Card>
       ))}
-    </>
+    </div>
   )
 }

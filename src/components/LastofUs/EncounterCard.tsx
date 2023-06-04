@@ -17,8 +17,8 @@ export const EncounterCard = ({ encounter, index }: { encounter: string; index: 
   }
 
   return (
-    <div key={encounter + index} className="max-w-sm rounded overflow-hidden shadow-lg">
-        <div className="px-6 py-3">
+    <div key={encounter + index} className="max-w-sm">
+        <div className="py-1">
           <span className={determineBgColor(encounter)}>{encounter}</span>
         </div>
     </div>

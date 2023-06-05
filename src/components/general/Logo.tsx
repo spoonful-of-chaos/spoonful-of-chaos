@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import logopic from '../../images/new_logo.png';
 
 export const Logo = (props: any) => (
   <Image
-    src="/_next/static/media/new_logo.1aa05d07.png"
+    src={logopic}
     alt="the spoon itself"
     width="80"
     height="30"

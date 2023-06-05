@@ -19,7 +19,7 @@ const Characters = () => {
       <h2 className="mt-12">Classes</h2>
       <div className="flex flex-col mt-4 md:grid md:grid-cols-3 md:gap-8">
         {Object.keys(classes)?.map((c: string, i: number) => (
-          <Card variant="ghost" key={`class-${c}-${i}`}>
+          <Card key={`class-${c}-${i}`}>
             <Link href={`/lou5e/classes/${c}`}>
               <h5 className="text-moonstone hover:text-spoon">{c.toUpperCase()} <span aria-hidden="true">→</span></h5>
             </Link>

@@ -49,4 +49,7 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [{
+    pattern: /(bg|text|border)-(spoon|moonstone|ghost|crayola|goldenrod|raisin)/
+  }]
 }

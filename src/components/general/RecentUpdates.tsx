@@ -4,9 +4,9 @@ import { TabHeader } from '@/components/general/TabHeader';
 export const RecentUpdates = () => {
   return (
     <div className="mt-6">
-      <TabHeader variant="secondary">Recent Updates</TabHeader>
+      <TabHeader variant="ghost"><span className="text-black">Recent Updates</span></TabHeader>
         <div className="md:flex md:gap-6">
-          <Card>
+          <Card variant="black">
             <p className="italic mb-2">Tue, May 9, 2023</p>
             <span className="text-xl font-display">Last of Us</span>
             <ul>

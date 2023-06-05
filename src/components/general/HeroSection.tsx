@@ -1,5 +1,3 @@
-import Link from "next/link"
-import { Card } from "./Card"
 import { NavigationButton } from "./NavigationButton"
 
 export const HeroSection = () => {

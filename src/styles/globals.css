@@ -1,7 +1,7 @@
 @layer base {
 
   body {
-    @apply text-ghost
+    @apply text-ghost bg-raisin
   }
 
   h1 {
@@ -93,27 +93,31 @@
   }
 
   .reverse-spoon {
-    @apply bg-spoon text-ghost w-full p-2
+    @apply bg-gradient-to-r to-spoon-light from-spoon text-black w-full p-2
   }
 
   .reverse-moon {
-    @apply bg-moonstone text-black w-full p-2
+    @apply bg-gradient-to-r to-moonstone-light from-moonstone text-black w-full p-2
   }
 
   .reverse-crayola {
-    @apply bg-crayola text-black w-full p-2
+    @apply bg-gradient-to-r to-crayola-light from-crayola text-black w-full p-2
   }
 
   .reverse-ghost {
-    @apply bg-ghost text-black w-full p-2
+    @apply bg-gradient-to-r to-raisin from-ghost text-black w-full p-2
   }
 
   .reverse-raisin {
-    @apply bg-raisin text-ghost w-full p-2
+    @apply bg-gradient-to-r to-ghost from-raisin text-ghost w-full p-2
   }
 
   .class-col-layout {
     @apply md:grid md:grid-flow-col md:gap-8 md:grid-cols-2
+  }
+
+  .bg-logo {
+    @apply bg-[url('/_next/static/media/new_logo.1aa05d07.png')] bg-center bg-contain bg-no-repeat
   }
 
 }

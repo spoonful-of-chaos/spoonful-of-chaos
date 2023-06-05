@@ -6,14 +6,14 @@ export const RecentUpdates = () => {
     <div className="mt-6">
       <TabHeader variant="secondary">Recent Updates</TabHeader>
         <div className="md:flex md:gap-6">
-          <Card variant="moonstone">
+          <Card variant="raisin">
             <p className="italic mb-2">Tue, May 9, 2023</p>
             <span className="text-xl font-display">Last of Us</span>
             <ul>
               <li>Added classes sections</li>
             </ul>
           </Card>
-          <Card variant="moonstone">
+          <Card variant="raisin">
             <p className="italic mb-2">Thu, May 25, 2023</p>
             <span className="text-xl font-display">Last of Us</span>
             <ul>
@@ -21,7 +21,7 @@ export const RecentUpdates = () => {
               <li>Added encounter generator: the goal of this is to provide balanced encounters within the world of <span className="italics">The Last of Us</span>. I&apos;ll probably update this in the future to include more general monsters.</li>
             </ul>
           </Card>
-          <Card variant="moonstone">
+          <Card variant="raisin">
             <p className="italic mb-2">Sun, June 4, 2023</p>
             <span className="text-xl font-display">Last of Us</span>
             <ul>

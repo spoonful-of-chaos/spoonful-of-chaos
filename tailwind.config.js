@@ -21,15 +21,25 @@ module.exports = {
         'spoon': {
           DEFAULT: '#ec3c7b',
           light: '#F8B5CC',
-          dark: '#CC1455'
+          dark: '#970037'
         },
         'ghost': '#e8e9f3',
         'moonstone': {
-          DEFAULT: '#429EA6',
-          light: '#8ACBD0',
-          dark: '#347D83'
+          DEFAULT: '#21dbf3',
+          light: '#8ffef9',
+          dark: '#147490'
         },
-        'crayola': '#FF7E47'
+        'crayola': {
+          DEFAULT: '#ff8752',
+          light: '#ffae8a',
+          dark: '#c84810'
+        },
+        'goldenrod': {
+          DEFAULT: '#fca727',
+          light: '#f4e282',
+          dark: '#d55516'
+        },
+        'raisin': '#18051c'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

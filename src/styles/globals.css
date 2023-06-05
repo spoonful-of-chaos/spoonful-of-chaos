@@ -45,23 +45,11 @@
   }
 
   a:hover {
-    @apply text-spoon
-  }
-
-  a:visited, a:active {
     @apply text-moonstone
   }
 
   a.ghosted, a.ghosted:hover, a.ghosted:visited, a.ghosted:active{
     @apply text-black
-  }
-
-  nav a:visited {
-    @apply text-spoon
-  }
-
-  nav a:hover {
-    @apply text-moonstone
   }
 
   .nav-item {

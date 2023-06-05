@@ -1,4 +1,9 @@
 @layer base {
+
+  body {
+    @apply text-ghost
+  }
+
   h1 {
     @apply font-display text-spoon text-4xl
   }
@@ -76,15 +81,11 @@
   }
 
   td, th {
-    @apply text-black text-left text-xs align-top py-2 px-2
-  }
-
-  th {
-    @apply font-black
+    @apply text-ghost text-left text-xs align-top py-2 px-2
   }
 
   tr {
-    @apply border-b border-black
+    @apply border-b border-ghost
   }
 
   tr:last-child {
@@ -105,6 +106,10 @@
 
   .reverse-ghost {
     @apply bg-ghost text-black w-full p-2
+  }
+
+  .reverse-raisin {
+    @apply bg-raisin text-ghost w-full p-2
   }
 
   .class-col-layout {
@@ -129,12 +134,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: black;
 }
 
 @tailwind base;

@@ -23,7 +23,7 @@ const Characters = () => {
             <Link href={`/lou5e/classes/${c}`}>
               <h5 className="text-moonstone hover:text-spoon">{c.toUpperCase()} <span aria-hidden="true">→</span></h5>
             </Link>
-            <p className="text-black">{classes[c].description}</p>
+            <p>{classes[c].description}</p>
             <table className="mt-4">
               <tbody>
                 <tr>

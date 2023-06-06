@@ -7,6 +7,7 @@ export const Footer = () => {
         <Link href="https://www.patreon.com/SpoonfulofChaos" target="_blank" className="text-sm font-semibold text-moonstone hover:text-spoon">
           Support me on Patreon <span aria-hidden="true">→</span>
         </Link>
+        <p className="text-xs italic mt-4">The Last of Us overhaul is unofficial Fan Content permitted under the Fan Content Policy created by me. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
       </footer>
   )
 }

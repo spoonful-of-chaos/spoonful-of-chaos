@@ -5,7 +5,7 @@ import Link from "next/link";
 const Characters = () => {
   return (
     <>
-      <h1 className="mb-2">Characters</h1>
+      <h1 className="mb-2 reverse-spoon">Characters</h1>
       <div className="md:grid md:grid-cols-2 md:gap-8">
         <p>
           Since The Last of Us takes place in a modern-day United States setting, many of the conventional rules/playstyles of Dungeons & Dragons are not applicable. The largest of these changes is the adjustment from spellcasting to crafting. To accommodate for this, the following classes have been created for the purpose of this campaign.
@@ -16,7 +16,7 @@ const Characters = () => {
       </div>
       <h4 className="mt-6">A Note on Playable Species</h4>
       <p>Because <span className="italics">The Last of Us</span> takes place in a modern, real-world setting, the only available playable species is human. Additionally, because there are no other playable species, do not take the additional ability score Human Trait from the Player&apos;s Handbook.</p>
-      <h2 className="mt-12">Classes</h2>
+      <h2 className="mt-12 reverse-moon">Classes</h2>
       <div className="flex flex-col mt-4 md:grid md:grid-cols-3 md:gap-8">
         {Object.keys(classes)?.map((c: string, i: number) => (
           <Card key={`class-${c}-${i}`}>

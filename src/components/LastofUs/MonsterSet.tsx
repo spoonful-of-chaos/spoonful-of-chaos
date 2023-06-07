@@ -7,7 +7,7 @@ export const MonsterSet = (props: any) => {
   return (
     <div {...props}>
       {state?.monsterSets && state.monsterSets.map((m, i) => (
-        <Card key={`monsterSet${i}`} className="max-w-sm mx-4" variant="black">
+        <Card key={`monsterSet${i}`}>
           <h6>Potential Monster Group {i + 1}</h6>
           <MonsterGroup key={`monsterGroup${i}`} monsters={m} groupIndex={i} />
         </Card>

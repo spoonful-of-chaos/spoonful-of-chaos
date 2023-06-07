@@ -6,13 +6,6 @@ export const RecentUpdates = () => {
     <div className="mt-6">
       <TabHeader variant="ghost"><span className="text-black">Recent Updates</span></TabHeader>
         <div className="md:flex md:gap-6">
-          <Card variant="black">
-            <p className="italic mb-2">Tue, May 9, 2023</p>
-            <span className="text-xl font-display">Last of Us</span>
-            <ul>
-              <li>Added classes sections</li>
-            </ul>
-          </Card>
           <Card>
             <p className="italic mb-2">Thu, May 25, 2023</p>
             <span className="text-xl font-display">Last of Us</span>
@@ -30,6 +23,13 @@ export const RecentUpdates = () => {
               <li>Added Prepper class</li>
               <li>Added Soldier class</li>
               <li>Added Bandit class</li>
+            </ul>
+          </Card>
+          <Card>
+            <p className="italic mb-2">Wed, June 7, 2023</p>
+            <span className="text-xl font-display">Last of Us</span>
+            <ul>
+              <li>Crafting is live!</li>
             </ul>
           </Card>
         </div>

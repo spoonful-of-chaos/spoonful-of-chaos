@@ -1,0 +1,105 @@
+{
+  "Craft Shiv": {
+    "name": "Craft Shiv",
+    "description": "Create a small makeshift blade. Can be used during your turn as an action. Each shiv can only be used once.",
+    "requirements": [
+      "binding",
+      "blade"
+    ],
+    "range": null,
+    "duration": null,
+    "damage": {
+      "condition": "Adds weaker bleeding to enemy",
+      "amount": "1d12 piercing damage"
+    }
+  },
+  "Craft Molotov Cocktail": {
+    "name": "Craft Molotov Cocktail",
+    "description": "Burn, baby, burn. Can be used during your turn as an action. Affects an area in a 15ft radius where it is thrown. Good accuracy for 30ft thrown, low accuracy for 60ft. Each creature in the area where thrown must make a Dexterity saving throw to avoid. The fire ignites anything flammable in the area.",
+    "requirements": [
+      "alcohol",
+      "rag",
+      "binding"
+    ],
+    "range": "thrown 30ft/60ft",
+    "duration": null,
+    "damage": {
+      "condition": "When you craft this item using a crafting slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+      "amount": "3d6 fire damage on a failed save, or half as much on a successful one"
+    }
+  },
+  "Craft Torch": {
+    "name": "Craft Torch",
+    "description": "Easy to see in the dark! You can hit things with it, but it won’t do much. Can ignite flammable objects.",
+    "requirements": [
+      "alcohol",
+      "rag"
+    ],
+    "range": null,
+    "duration": null,
+    "damage": {
+      "condition": null,
+      "amount": "1d4 bludgeoning damage, +1 fire damage"
+    }
+  },
+  "Friends": {
+    "name": "Friends",
+    "description": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile towards you. When you lose concentration on this, a creature prone to violence might attack you or seek retribution in other ways (at the GM's discretion) depending on the nature of your interaction with it.",
+    "requirements": null,
+    "duration": {
+      "isConcentration": true,
+      "time": "1 minute"
+    },
+    "range": "self",
+    "damage": null
+  },
+  "Guidance": {
+    "name": "Guidance",
+    "description": "You encourage one willing creature within 30 ft of you. Once before this ends, the target can roll 1d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check.",
+    "requirements": null,
+    "range": "30ft",
+    "duration": {
+      "isConcentration": true,
+      "time": "1 minute"
+    },
+    "damage": null
+  },
+  "Mending": {
+    "name": "Mending",
+    "description": "You're quite the tinkerer and have discovered you can fix most simple things. This craft repairs a single break or tear in an object you touch. As long as the break or tear is no larger than 1 foot in any dimension, you can fix it.",
+    "requirements": null,
+    "range": "touch",
+    "duration": null,
+    "damage": null
+  },
+  "Resistance": {
+    "name": "Resistance",
+    "description": "You touch one willing creature to provide support. Once before this ends, the target can roll 1d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw.  This effect then ends.",
+    "requirements": null,
+    "range": null,
+    "duration": {
+      "isConcentration": true,
+      "time": "1 minute"
+    },
+    "damage": null
+  },
+  "True Strike": {
+    "name": "True Strike",
+    "description": "You have recognized patterns in your enemies' actions which grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this has not ended.",
+    "requirements": null,
+    "range": "30 ft",
+    "duration": {
+      "isConcentration": true,
+      "time": "1 round"
+    },
+    "damage": null
+  },
+  "Vicious Mockery": {
+    "name": "Vicious Mockery",
+    "description": "You unleash a string of insults at a creature you can see within range. If the target can hear you and understand you, it must succeed on a Wisdom saving throw or have disadvantage on the next attack roll it makes before the end of its turn. ",
+    "requirements": null,
+    "range": "60 ft",
+    "duration": null,
+    "damage": null
+  }
+}

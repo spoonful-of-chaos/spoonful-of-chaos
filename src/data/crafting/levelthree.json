@@ -1,0 +1,42 @@
+{
+  "Beacon of Hope": {
+    "name": "Beacon of Hope",
+    "description": "You can speak inspiringly and bestow hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws and regains 6 HP.",
+    "requirements": [
+      "medicine"
+    ],
+    "range": "30 ft",
+    "duration": {
+      "isConcentration": true,
+      "time": "1 minute"
+    },
+    "damage": null
+  },
+  "Create Nail Bomb": {
+    "name": "Create Nail Bomb",
+    "description": "This projectile can be thrown with good accuracy for 30ft or with low accuracy for 60ft. Upon impact with a hard surface, sharp projectiles explode from it, affecting all creatures within a 15ft radius. Can be used during your turn as an action. Creatures must succeed on a Dexterity saving throw to avoid. On failure, they take 3d6 piercing damage plus heavy bleeding, or half as much damage on success.",
+    "requirements": [
+      "blade",
+      "explosive"
+    ],
+    "range": "30ft/60ft",
+    "duration": null,
+    "damage": {
+      "condition": "heavy bleeding",
+      "amount": "3d6 piercing damage"
+    }
+  },
+  "Net Launcher": {
+    "name": "Net Launcher",
+    "description": "This device has a 15ft-20ft range and launches a net which expands to ensnare creatures at the point the user aims. A creature can use its action to make a DC 15 Strength check, freeing itself or another creature within reach. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. Can be used during your turn as an action. Creatures must succeed on a Dex Saving Throw DC 15 to avoid. Requires 1 turn to load.",
+    "requirements": [
+      "binding",
+      "explosive"
+    ],
+    "range": "15-20ft",
+    "duration": null,
+    "damage": {
+      "condition": "ensnared"
+    }
+  }
+}

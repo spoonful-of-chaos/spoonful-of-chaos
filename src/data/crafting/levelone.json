@@ -1,0 +1,79 @@
+{
+  "Create Bandages": {
+    "name": "Create Bandages",
+    "description": "Pre-prepare bandages for helping heal small wounds. Bandages can be used during your turn as your action",
+    "requirements": [
+      "alcohol",
+      "rag"
+    ],
+    "range": null,
+    "duration": null,
+    "damage": {
+      "condition": "Negates bleeding",
+      "amount": "+3 HP"
+    }
+  },
+  "Detect Poison & Disease": {
+    "name": "Detect Poison & Disease",
+    "description": "For the duration, you have a heightened intuition and can pick up on subtle clues in the landscape around you. You can sense the presence and location of poisons, poisonous creatures (like the infected), and diseases within 30 ft of you. You can also identify the kind of poison, poisonous creature, or disease in each case. This insight can penetrate most barriers but is blocked by 1 ft of stone, 1 inch of metal, or 3 feet of wood or dirt.",
+    "requirements": null,
+    "range": "30 ft",
+    "duration": {
+      "isConcentration": true,
+      "time": "up to 10 minutes"
+    },
+    "damage": null
+  },
+  "Disguise Self": {
+    "name": "Disguise Self",
+    "description": "You're very perceptive, and have picked up on how creatures look and act in different situations, allowing yourself to blend in seamlessly. Using materials around you, you are able to disguise yourself as a creature of your choice. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence check against your crafting save DC.",
+    "requirements": null,
+    "range": "self",
+    "duration": {
+      "isConcentration": false,
+      "time": "1 hour"
+    },
+    "damage": null
+  },
+  "Game Snare": {
+    "name": "Game Snare",
+    "description": "A simple noose made of wire used to capture small game animals.",
+    "requirements": [ "wire" ],
+    "range": "self",
+    "duration": null,
+    "damage": {
+      "condition": "Succeed on a Nature/Survival check to place the snare over a game trail to ensure a small game animal is captured during a 4 hour period.",
+      "amount": null
+    }
+  },
+  "Heroism": {
+    "name": "Heroism",
+    "description": "A willing creature you touch and encourage is imbued with bravery. For the duration, the creature is immune to being frightened and gains temporary hit points equal to your crafting ability modifier at the start of each of its turns. When this ends, the target loses any remaining temporary hit points.",
+    "requirements": null,
+    "range": "touch",
+    "duration": {
+      "isConcentration": true,
+      "time": "up to 1 minute"
+    },
+    "damage": null
+  },
+  "Melee Upgrades": {
+    "name": "Melee Upgrades",
+    "description": "Bind blades to a melee weapon of your choice to apply a weaker bleeding effect to that weapon for 5 turns. Cannot be created while in combat.",
+    "requirements": [ "melee weapon", "blade", "binding" ],
+    "range": null,
+    "duration": null,
+    "damage": {
+      "condition": "Adds weaker bleeding",
+      "amount": "+2 damage to melee weapon"
+    }
+  },
+  "Noisy Trap": {
+    "name": "Noisy Trap",
+    "description": "String a trip wire that makes noise when a creature stumbles into it, alerting nearby creatures. A creature must make a Perception check to determine if they detect the trap before triggering it. On fail, the creature must make a Dexterity saving throw. On pass, the creature triggers the alert but does not fall. On fail, the creature falls prone.",
+    "requirements": [ "bottle", "wire" ],
+    "range": "touch",
+    "duration": null,
+    "damage": null
+  }
+}

@@ -1,13 +1,18 @@
-import bandit from '@/data/bandit.monster.json';
-import bloater from '@/data/bloater.monster.json';
-import captain from '@/data/captain.monster.json';
-import clicker from '@/data/clicker.monster.json';
-import guard from '@/data/guard.monster.json';
-import runner from '@/data/runner.monster.json';
-import scout from '@/data/scout.monster.json';
-import sniper from '@/data/sniper.monster.json';
-import stalker from '@/data/stalker.monster.json';
-import thug from '@/data/thug.monster.json';
+import bandit from '@/data/monsters/bandit.monster.json';
+import bloater from '@/data/monsters/bloater.monster.json';
+import captain from '@/data/monsters/captain.monster.json';
+import clicker from '@/data/monsters/clicker.monster.json';
+import guard from '@/data/monsters/guard.monster.json';
+import runner from '@/data/monsters/runner.monster.json';
+import scout from '@/data/monsters/scout.monster.json';
+import sniper from '@/data/monsters/sniper.monster.json';
+import stalker from '@/data/monsters/stalker.monster.json';
+import thug from '@/data/monsters/thug.monster.json';
+
+import cantrips from '@/data/crafting/cantrips.json';
+import one from '@/data/crafting/levelone.json';
+import two from '@/data/crafting/leveltwo.json';
+import three from '@/data/crafting/levelthree.json';
 
 export const monsters = {
   bandit,
@@ -22,3 +27,9 @@ export const monsters = {
   stalker
 };
 
+export const crafts = {
+  cantrips,
+  one,
+  two,
+  three
+}

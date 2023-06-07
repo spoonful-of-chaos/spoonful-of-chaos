@@ -15,8 +15,8 @@ export const HeroSection = () => {
         <NavigationButton link="/lou5e/encounters">
           Encounter Generator
         </NavigationButton>
-        <NavigationButton disabled link="/">
-          Coming Soon: Cantrips & Crafting
+        <NavigationButton link="/lou5e/crafting">
+          Cantrips & Crafting
         </NavigationButton>
         <NavigationButton disabled link="/">
           Coming Soon: Gameplay Rules

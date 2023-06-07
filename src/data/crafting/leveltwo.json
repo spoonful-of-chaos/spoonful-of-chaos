@@ -1,0 +1,71 @@
+{
+  "Aid": {
+    "name": "Aid",
+    "description": "Your rallying cry bolsters your allies with toughness and resolve. Choose up to 3 creatures within range. Each target's HP max and current hit points increases by 5 for the duration.",
+    "requirements": [
+      "medicine"
+    ],
+    "range": "30 ft",
+    "duration": {
+      "isConcentration": false,
+      "time": "8 hours"
+    },
+    "damage": null
+  },
+  "Calm Emotions": {
+    "name": "Calm Emotions",
+    "description": "You attempt to sooth strong emotions in a group of people. Each humanoid in a 20-ft-radius sphere centered around you must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails, choose whether that creature becomes friendly, frightened, or indifferent. This effect ends if the target is attacked or harmed or witnesses any of its friends being harmed.",
+    "requirements": null,
+    "range": "20 ft",
+    "duration": {
+      "isConcentration": true,
+      "time": "1 min"
+    },
+    "damage": null
+  },
+  "Create First Aid Kit": {
+    "name": "Create First Aid Kit",
+    "description": "A useful kit to heal a larger amount of health which can be used 3 times. Requires 2 turns to create.",
+    "requirements": [ "alcohol", "rag", "medicine" ],
+    "range": null,
+    "duration": {
+      "isConcentration": true,
+      "time": "1 min"
+    },
+    "damage": {
+      "condition": "Negates bleeding",
+      "amount": "+6 HP"
+    }
+  },
+  "Create Smoke Bomb": {
+    "name": "Create Smoke Bomb",
+    "description": "This projectile can be thrown with good accuracy for 30ft or with low accuracy for 60ft. Upon impact with a hard surface, it releases a cloud of smoke within a 10ft radius which makes it difficult for all creatures within that radius to detect other creatures outside it for 1 turn (heavily obscured). Can be used during your turn as an action.",
+    "requirements": [ "sugar", "explosive" ],
+    "range": "30ft/60ft",
+    "duration": {
+      "isConcentration": false,
+      "time": "1 turn"
+    },
+    "damage": {
+      "condition": "Creatures within the radius have disadvantage on attack throws."
+    }
+  },
+  "Find Traps": {
+    "name": "Find Traps",
+    "description": "Your expertise in setting traps allows you to easily spot them. You sense the presence of any trap within range that is within line of sight. A trap includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creature. You don't learn the specific nature of the trap, but you do learn the general nature of the danger posed by a trap you sense.",
+    "requirements": null,
+    "range": "60ft",
+    "duration": null,
+    "damage": null
+  },
+  "Tangle Trap": {
+    "name": "Tangle Trap",
+    "description": "A trip wire that can be set across a span up to the length of wire available that entangles creatures that step into it. Requires 2 turns to create and and 1 turn to set.",
+    "requirements": [ "wire", "binding" ],
+    "range": null,
+    "duration": null,
+    "damage": {
+      "condition": "Creatures must succeed on a Dex Saving Throw DC=8+Proficiency bonus+Crafting modifier to avoid. If they fail, they are knocked prone."
+    }
+  }
+}

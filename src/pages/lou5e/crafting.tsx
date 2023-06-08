@@ -56,7 +56,6 @@ const Crafting = () => {
       }
     }
 
-    console.log('all', all)
     setList(all);
   }, [searchParams])
 

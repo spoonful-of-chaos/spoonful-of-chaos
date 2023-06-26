@@ -120,7 +120,7 @@ const Bandit = () => {
           <h4 className="my-4 h4-crayola">Killer</h4>
           <p>It&apos;s too common nowadays to need someone, or something, dead.</p>
           <h6 className="mt-2 text-crayola">Bonus Proficiencies</h6>
-          <p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit abd poisoner&apos;s kit.</p>
+          <p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and poisoner&apos;s kit.</p>
           <h6 className="mt-2 text-crayola">Quick on the Draw</h6>
           <p>Starting at 3rd lvl, you have advantage on any attack rolls made against a creature that has not taken a turn in combat yet. Any hit you make against a creature who is surprised is a critical hit.</p>
 

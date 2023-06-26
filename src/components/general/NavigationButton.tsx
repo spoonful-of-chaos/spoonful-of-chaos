@@ -9,7 +9,7 @@ export const NavigationButton = ({ children, link, disabled }: any) => {
   })
 
   return (
-    <Link className={`ghosted w-full mt-2 md:mt-0 rounded font-display text-left px-6 py-2 flex justify-between ${isDisabled}`} href={link}>
+    <Link className={`ghosted w-full mt-2 md:mt-0 rounded font-display text-left px-6 py-2 flex justify-between self-start ${isDisabled}`} href={link}>
       {children}<span aria-hidden="true">→</span>
     </Link>
   )

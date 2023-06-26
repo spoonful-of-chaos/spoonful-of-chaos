@@ -57,7 +57,7 @@
   }
 
   .nav-item {
-    @apply text-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
+    @apply font-display text-ghost block rounded-lg py-2 pl-6 pr-3 tracking-wide 
   }
 
   .nav-item:visited {
@@ -65,7 +65,7 @@
   }
 
   .nav-item:hover, .nav-item:active {
-    @apply text-moonstone-dark bg-ghost block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7
+    @apply text-moonstone-dark bg-ghost block rounded-lg
   }
 
   ul {
@@ -85,7 +85,7 @@
   }
 
   .reverse-spoon {
-    @apply bg-gradient-to-r to-spoon-light from-spoon text-black w-full p-2
+    @apply bg-gradient-to-r to-spoon from-spoon-dark text-ghost w-full p-2
   }
 
   .reverse-moon {
@@ -115,22 +115,22 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 24, 5, 28;
+  --background-start-rgb: 232, 233, 243;
+  --background-end-rgb: 232, 233, 243;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 232, 233, 243;
+    --background-start-rgb: 24, 5, 28;
+    --background-end-rgb: 24, 5, 28;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: black;
+  background: rgb(var(--background-start-rgb));
 }
 
 @tailwind base;

@@ -1,13 +1,23 @@
 import { RecentUpdates } from '@/components/general/RecentUpdates';
 import { HeroSection } from '@/components/general/HeroSection';
 import { About } from '@/components/general/About';
+import { getSortedPostsData } from '@/lib/posts';
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({ allPostsData }: any) {
   return (
     <>
       <HeroSection />
       <div className="mt-12">
-        <RecentUpdates />
+        <RecentUpdates posts={allPostsData} />
       </div>
       <div className="mt-12">
         <About /> 

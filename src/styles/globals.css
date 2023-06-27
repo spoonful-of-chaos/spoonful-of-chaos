@@ -41,7 +41,7 @@
   }
 
   button.standard {
-    @apply rounded bg-moonstone hover:bg-crayola-light text-sm font-display px-4 py-2
+    @apply rounded bg-moonstone hover:bg-crayola-light text-sm text-black font-display px-4 py-2
   }
 
   a {

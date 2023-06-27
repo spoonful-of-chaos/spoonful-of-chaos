@@ -33,8 +33,8 @@ export const DayControl = () => {
           </select>
         </div>
       </div>
-      <button type="button" className="rounded-md bg-white text-black py-2 px-4 my-6" onClick={onGenerate}>Generate</button>
-      <div>{fatigueConfig[state.fatigueLevel].definition}</div>
+      <button type="button" className="standard my-6" onClick={onGenerate}>Generate</button>
+      <div className="text-black rounded p-4 bg-spoon-light">{fatigueConfig[state.fatigueLevel].definition}</div>
     </form>
   )
 }

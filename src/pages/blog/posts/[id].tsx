@@ -2,7 +2,6 @@ import { NavigationButton } from "@/components/general/NavigationButton"
 import { getAllPostIds, getPostData } from "@/lib/posts"
 import { formatDate } from "@/utils/formatting"
 import Link from "next/link"
-import { Post } from "@/lib/types"
 
 const Post = ({ postData }: any) => {
   return (

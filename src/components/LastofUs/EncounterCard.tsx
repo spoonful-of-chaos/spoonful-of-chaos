@@ -2,25 +2,23 @@
 export const EncounterCard = ({ encounter, index }: { encounter: string; index: number }) => {
   const determineBgColor = (val: string) => {
     if (val === 'mild') {
-      return 'inline-block bg-violet-600 rounded-full px-3 py-1 text-sm font-semibold text-white-700 mr-2 mb-1';
+      return 'violet';
     } else if (val === 'bruising') {
-      return 'inline-block bg-indigo-600 rounded-full px-3 py-1 text-sm font-semibold text-white-700 mr-2 mb-1';
+      return 'indigo';
     } else if (val === 'bloody') {
-      return 'inline-block bg-teal-600 rounded-full px-3 py-1 text-sm font-semibold text-white-700 mr-2 mb-1';
+      return 'teal';
     } else if (val === 'brutal') {
-      return 'inline-block bg-cyan-600 rounded-full px-3 py-1 text-sm font-semibold text-white-700 mr-2 mb-1';
+      return 'cyan';
     } else if (val === 'oppressive') {
-      return 'inline-block bg-fuchsia-600 rounded-full px-3 py-1 text-sm font-semibold text-white-700 mr-2 mb-1';
+      return 'fuchsia';
     } else {
-      return 'inline-block bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-white-700 mr-2 mb-1';
+      return 'gray';
     }
   }
 
   return (
-    <div key={encounter + index} className="max-w-sm">
-        <div className="py-1">
-          <span className={determineBgColor(encounter)}>{encounter}</span>
-        </div>
+    <div key={encounter + index} className="mt-2">
+      <span className={`font-display tracking-wide inline-block bg-${determineBgColor(encounter)}-600 rounded-full px-3 py-1 text-sm text-ghost mr-2 mb-2`}>{encounter}</span>
     </div>
   )
 }

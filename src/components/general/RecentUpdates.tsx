@@ -20,7 +20,7 @@ export const RecentUpdates = ({ posts }: { posts: Post[] }) => {
       <TabHeader variant="ghost"><span className="text-black">Recent Updates</span></TabHeader>
         <div className="md:flex md:gap-6">
           {posts.map((p: Post, i: number) => i < 3 && (
-              <Card>
+              <Card key={`recent-${p.id}`}>
                 <p className="italic mb-2">{formatDate(p.date)}</p>
                 <span className="text-xl font-display">{p.categories}</span>
                 <p>{p.excerpt}</p>

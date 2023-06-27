@@ -1,10 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Navigation } from '@/utils/navigation';
 import { Logo } from '@/components/general/Logo';
+import { useRouter } from 'next/router';
 
 export const Nav = () => {
   const [open, setOpen] = useState<boolean>();
+  const router = useRouter();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [router.asPath])
 
   return (
     <header className="w-full">

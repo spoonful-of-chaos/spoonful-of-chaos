@@ -24,19 +24,19 @@ export async function getStaticProps() {
 }
 
 const Blog = ({ allPostsData }: { allPostsData: Post[] }) => {
-  console.log(allPostsData)
-
   return (
     <>
-      <h1 className="mb-12 reverse-spoon">Blog</h1>
+      <h1 className="mb-12 reverse-moon">Blog</h1>
       {allPostsData.map((p: Post, i: number) => (
-        <div key={`posts-${p.id}`} className="mb-4 border-b border-ghost">
+        <div key={`posts-${p.id}`} className="mb-6">
           <div className="md:grid md:grid-cols-4">
-            <p className="italic mb-2 md:col-span-3">{formatDate(p.date)}</p>
-          {p.link && <NavigationButton link={p.link}>See more</NavigationButton>}
+            <div className="md:col-span-3">
+              <p className="italic  text-moonstone">{formatDate(p.date)} | {p.categories}</p>
+              <h3 className="text-moonstone mb-2">{p.title}</h3>
+              <p>{p.excerpt}</p>
+            </div>
+            {p.link && <NavigationButton link={`/blog/posts/${p.id}`}>Read more</NavigationButton>}
           </div>
-          <span className="text-xl font-display">{p.categories}</span>
-            <p>{p.excerpt}</p>
         </div>
       )
       )}

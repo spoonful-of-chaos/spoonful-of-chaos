@@ -30,7 +30,7 @@ const Blog = ({ allPostsData }: { allPostsData: Post[] }) => {
     <>
       <h1 className="mb-12 reverse-spoon">Blog</h1>
       {allPostsData.map((p: Post, i: number) => (
-        <div key={`posts-${p.id}` className="mb-4 border-b border-ghost">
+        <div key={`posts-${p.id}`} className="mb-4 border-b border-ghost">
           <div className="md:grid md:grid-cols-4">
             <p className="italic mb-2 md:col-span-3">{formatDate(p.date)}</p>
           {p.link && <NavigationButton link={p.link}>See more</NavigationButton>}

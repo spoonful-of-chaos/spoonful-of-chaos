@@ -1,14 +1,15 @@
 import { State } from '@/context/settings.context';
 
-import { Monster, difficultyConfig, levelConfig, monsterConfig } from './configs';
+import { challengeRatingConfig, difficultyConfig, levelConfig } from './configs';
+import { Creature } from '@/lib/types';
 
 type Encounter = {
   partyPower: number,
   powerBudget: number,
-  monsters: Monster[][]
+  monsters: Creature[][]
 }
 
-const generateEncounter = (args: State, monsters: Monster[]): Monster[][] => {
+const generateEncounter = (args: State, monsters: Creature[]): Creature[][] => {
   const encounter: Encounter = {
     partyPower: 0,
     powerBudget: 0,
@@ -32,25 +33,25 @@ const generateEncounter = (args: State, monsters: Monster[]): Monster[][] => {
   return encounter.monsters;
 }
 
-const getMonsters = (powerBudget: number, allMonsters: any): Monster[] => {
+const getMonsters = (powerBudget: number, allMonsters: any): Creature[] => {
   const chosenMonsters: any = [];
 
   for (let currentTotal = 0; currentTotal < powerBudget;) {
     const monster = allMonsters[allMonsters.length * Math.random() | 0];
     chosenMonsters.push({
-      name: monster.name,
-      cr: monster.cr,
+      title: monster.title,
+      challenge: monster.challenge,
       type: monster.type,
     })
 
-    const monsterPowerConfig = Object.keys(monsterConfig).find(m => monsterConfig[m].cr === monster.cr)
+    const monsterPowerConfig = challengeRatingConfig[monster.challenge as keyof typeof challengeRatingConfig].power;
 
     if (monsterPowerConfig !== undefined) {
-      currentTotal = currentTotal + monsterConfig[monsterPowerConfig].power
+      currentTotal = currentTotal + monsterPowerConfig
     }
   }
 
-  return chosenMonsters.sort((a: Monster, b: Monster) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
+  return chosenMonsters.sort((a: Creature, b: Creature) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 }
 
 export { generateEncounter };

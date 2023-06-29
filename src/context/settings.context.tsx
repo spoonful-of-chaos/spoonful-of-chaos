@@ -1,4 +1,4 @@
-import { Monster } from '@/utils/configs';
+import { Creature } from '@/lib/types';
 import { ReactNode, createContext, useContext, useReducer } from 'react';
 
 export type ActionTypes = 'roomCount' | 'floorCount' | 'monsterSets' | 'difficulty' | 'playerLevel' | 'fatigueLevel' | 'playerCount' | 'daySets' | 'monsterType'
@@ -15,7 +15,7 @@ export type State = {
   roomCount: number,
   floorCount: number,
   difficulty: Difficulities
-  monsterSets: Monster[][],
+  monsterSets: Creature[][],
   daySets: string[][],
   playerLevel: number,
   playerCount: number,

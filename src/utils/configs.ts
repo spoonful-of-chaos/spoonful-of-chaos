@@ -13,15 +13,9 @@ type FatigueConfig = {
   definition: string,
 }
 
-type MonsterConfig = {
-  cr: string,
-  power: number
-}
-
-export type Monster = {
-  cr: string,
+export type Ability = {
   name: string,
-  type: string
+  description: string,
 }
 
 export const difficultyConfig: Record<string, DifficultyConfig> = {
@@ -89,34 +83,6 @@ export const fatigueConfig: Record<string, FatigueConfig> = {
     definition: 'The PCs will use all of their resources.'
   }
 }
-
-export const monsterConfig: Record<string, MonsterConfig> = {
-  0.125: {
-    cr: "1/8",
-    power: 5
-  },
-  0.25: {
-    cr: "1/4",
-    power: 10
-  },
-  0.50: {
-    cr: "1/2",
-    power: 16
-  },
-  1: {
-    cr: "1",
-    power: 22
-  },
-  2: {
-    cr: "2",
-    power: 28
-  },
-  3: {
-    cr: "3",
-    power: 37
-  }
-}
-
 export const levelConfig: Record<string, number> = {
   "1": 11,
   "2": 14, 
@@ -138,4 +104,31 @@ export const levelConfig: Record<string, number> = {
   "18": 119,
   "19": 131,
   "20": 141
+}
+
+export const challengeRatingConfig = {
+  '0': {
+    xp: 10,
+    power: 0,
+  },
+  '1/8': {
+    xp: 25,
+    power: 5
+  },
+  '1/4': {
+    xp: 50,
+    power: 10,
+  },
+  '1/2': {
+    xp: 100,
+    power: 16
+  },
+  '1': {
+    xp: 200,
+    power: 22
+  },
+  '2': {
+    xp: 450,
+    power: 28
+  } 
 }

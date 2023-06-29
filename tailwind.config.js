@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        'max-height': 'max-height'
+      },
       fontFamily: {
         'display': ['Bebas Neue', 'sans-serif'],
         'serif': ['Source Serif Pro'],
@@ -48,7 +51,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
   safelist: [{
     pattern: /(bg|text|border)-(spoon|moonstone|ghost|crayola|goldenrod|raisin)/
   }]

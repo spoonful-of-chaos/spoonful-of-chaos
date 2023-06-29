@@ -1,9 +1,10 @@
-import { HeroSection } from "@/components/general/HeroSection";
-import { MainLayout } from "@/layouts/MainLayout"
+import { LastofUsHero } from "@/components/LastofUs/LastofUsHero";
 
 const Index = () => {
   return (
-    <HeroSection />
+    <div className="w-full flex flex-col justify-center items-center">
+      <LastofUsHero />
+    </div>
   )
 }
 

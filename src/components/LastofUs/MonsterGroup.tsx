@@ -1,10 +1,10 @@
-import { Monster } from "@/utils/configs"
 import { MonsterCard } from "./MonsterCard"
+import { Creature } from "@/lib/types"
 
-export const MonsterGroup = ({ monsters, groupIndex }: { monsters: Monster[], groupIndex: number}) => {
+export const MonsterGroup = ({ monsters, groupIndex }: { monsters: Creature[], groupIndex: number}) => {
   return (
     <div>
-      {monsters && monsters.map((m, i) => (<MonsterCard key={`${m.name}${groupIndex}${i}`} monster={m} />))}
+      {monsters && monsters.map((m, i) => (<MonsterCard key={`${m.title}${groupIndex}${i}`} monster={m} />))}
     </div>
   )
 }

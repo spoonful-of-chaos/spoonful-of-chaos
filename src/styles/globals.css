@@ -29,7 +29,7 @@
   }
 
   h5 {
-    @apply font-display text-lg text-ghost
+    @apply font-display text-lg
   }
 
   h6 {
@@ -37,7 +37,7 @@
   }
 
   p {
-    @apply font-serif text-ghost mb-3
+    @apply font-serif mb-3
   }
 
   button.standard {
@@ -69,7 +69,7 @@
   }
 
   ul {
-    @apply text-ghost list-disc ml-4 mb-2
+    @apply list-disc ml-4 mb-2
   }
 
   td, th {
@@ -102,6 +102,10 @@
 
   .reverse-raisin {
     @apply bg-gradient-to-r to-ghost from-raisin text-ghost w-full p-2
+  }
+
+  .reverse-goldenrod {
+    @apply bg-gradient-to-r to-goldenrod from-goldenrod-dark text-ghost w-full p-2
   }
 
   .class-col-layout {

@@ -1,13 +1,12 @@
-import { useMonsters } from "@/context/monsters.context";
 import { ActionTypes, useSettings } from "@/context/settings.context";
+import { Creature } from "@/lib/types";
 import { difficultyConfig } from "@/utils/configs";
 import { generateEncounter } from "@/utils/encounters";
 
-export const EncounterControl = () => {
+export const EncounterControl = ({ creatures }: { creatures: Creature[] }) => {
   const { state, dispatch } = useSettings();
-  const monsters = useMonsters();
 
-  const monsterTypes = ['all', ...new Set(monsters.map(m => m.type))]
+  const monsterTypes = ['all', ...new Set(creatures.map(m => m.type))]
   
   const handleChange = (type: ActionTypes, val: number | string) => {
     dispatch({
@@ -17,7 +16,7 @@ export const EncounterControl = () => {
   }
 
   const onGenerate = () => {
-    const encounters = generateEncounter(state, monsters);
+    const encounters = generateEncounter(state, creatures);
 
     dispatch({
       type: 'monsterSets',

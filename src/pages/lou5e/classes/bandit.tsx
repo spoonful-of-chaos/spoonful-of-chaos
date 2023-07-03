@@ -94,14 +94,16 @@ const Bandit = () => {
           <h4 className="my-4 h4-crayola">Where You Need to Be</h4>
           <p>You can take a bonus action on each of your turns in combat. This action can only be taken to Dash, Disengage, or Hide.</p>
 
+          <h4 className="my-4 h4-crayola">Bandit Archetype</h4>
+          <p>At 3rd level, you choose a bandit archetype to emulate: Raider, Killer, or Swashbuckler. Your choice grants you features at this level and again at 6th, 10th, and 14th level. The archetypes are described at the bottom of this section.</p>
         </div>
         <div>
 
-          <h4 className="my-4 h4-crayola">Bandit Archetype</h4>
-          <p>At 3rd level, you choose a bandit archetype to emulate: Raider, Killer, or Swashbuckler. Your choice grants you features at this level and again at 6th, 10th, and 14th level. The archetypes are described at the bottom of this section.</p>
-
           <h4 className="my-4 h4-crayola">Uncanny Dodge</h4>
           <p>When an attacker you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
+
+          <h4 className="my-4 h4-crayola">Ability Score Improvement</h4>
+          <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
 
         </div>
       </div>

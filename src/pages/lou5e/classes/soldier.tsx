@@ -122,6 +122,9 @@ const Soldier = () => {
           <h4 className="my-4 h4-crayola">Martial Archetype</h4>
           <p>At 3rd level, you choose a martial archetype to emulate: Maverick or Captain. Your choice grants you features at this level and again at 6th, 10th, and 14th level. The archetypes are described at the bottom of this section.</p>
 
+          <h4 className="my-4 h4-crayola">Ability Score Improvement</h4>
+          <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+
           <h4 className="my-4 h4-crayola">Extra Attack</h4>
           <p>Beginning at 5th level, you can attack twice, instead of once,  whenever you take the Attack action during your turn.</p>
 

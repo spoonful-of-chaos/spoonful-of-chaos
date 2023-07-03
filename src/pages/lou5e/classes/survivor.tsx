@@ -147,6 +147,9 @@ const Survivor = () => {
           </ul>
           <p>Choose an additional favored terrain type at 6th and 14th level.</p>
 
+          <h4 className="my-4 h4-crayola">Ability Score Improvement</h4>
+          <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+
           <h4 className="my-4 h4-crayola">Survivor Archetype</h4>
           <p>At 5th level, you choose an archetype that you strive to emulate: Hunter or Beast Master. Your choice grants you features at 5th, 7th, 11th, and 15th level. Archetypes are detailed at the end of this description. </p>
 

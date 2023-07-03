@@ -110,14 +110,16 @@ const Smuggler = () => {
           <p>When attacking with a firearm, you take a deep calming breath and are able to aim better. Make your damage roll with advantage. After 4 uses, you will need to rest before being able to use this again.</p>
           <h5 className="mt-2 text-crayola">The Muscle</h5>
           <p>When attacking with your bare fist, add your strength or dexterity (your choice) modifier to the attack and roll with advantage. Use that same modifier for your damage roll modifier.</p>
-        </div>
-        <div>
           <h4 className="my-4 h4-crayola">Focus</h4>
           <p>Roll a D20 with disadvantage and focus your hearing, based on the DC of the nearby enemies your GM will draw (or mark) on a small map where your enemies most likely are in comparison to you. Starting at level 4, you can roll with advantage instead of Disadvantage.</p>
+        </div>
+        <div>
           <h4 className="my-4 h4-crayola">Jack of All Trades</h4>
           <p>Choose an additional fighting style.</p>
           <h4 className="my-4 h4-crayola">Expertise</h4>
           <p>At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+          <h4 className="my-4 h4-crayola">Ability Score Improvement</h4>
+          <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
           <h4 className="my-4 h4-crayola">Smuggler Points</h4>
           <p>Starting at 5th level, your experience allows you to understand critical points in the flow of combat. This experience is represented as a number of smuggler points. Refer to the class feature table to see the number of points available per level.</p>
           <p>You can spend these points to fuel various features. You start knowing these three: Flurry, Patient Defense, and Stunning Strike.</p>

@@ -106,6 +106,9 @@ const Prepper = () => {
           <h4 className="my-4 h4-crayola">Always Ready</h4>
           <p>When you finish a long rest, roll 2D20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or any creature you can see with one of these rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Each roll can only be used once and all are reset when starting a long rest.</p>
 
+          <h4 className="my-4 h4-crayola">Ability Score Improvement</h4>
+          <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+
           <h4 className="my-4 h4-crayola">Prepper Speciality</h4>
           <p>At 5th level, you choose a speciality: Combat Medic, Artillerist, or Savant. Your choice grants you features at this level and again at 6th, 10th, and 14th level.</p>
 

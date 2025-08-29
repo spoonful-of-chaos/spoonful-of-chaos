@@ -5,6 +5,6 @@ module.exports = {
   images: {
     unoptimized: true, // GitHub Pages doesn't support Next.js image optimizer
   },
-  basePath: isProd ? "/<your-repo-name>" : "",
-  assetPrefix: isProd ? "/<your-repo-name>/" : "",
+  basePath: isProd ? "/spoonful-of-chaos" : "",
+  assetPrefix: isProd ? "/spoonful-of-chaos/" : "",
 };

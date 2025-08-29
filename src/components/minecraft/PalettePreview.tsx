@@ -33,7 +33,7 @@ export const PreviewTitle = ({ t }: any) => {
 
 export const PalettePreview = ({ preview, clearPreview }: { preview: Record<any, any>[], clearPreview: any }) => {
   return (
-    <div className='w-full space-y-4 pb-4 border-b-raisin border-1 border'>
+    <div className='flex flex-wrap w-full gap-4 pb-4 border-b-raisin border-1 border'>
       {preview.length == 0 && <p>Select from the textures below to build your palette.</p>}
       <div className='flex'>
         <div className='max-w-sm'>

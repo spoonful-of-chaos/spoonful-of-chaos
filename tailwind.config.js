@@ -42,7 +42,12 @@ module.exports = {
           light: '#f4e282',
           dark: '#d55516'
         },
-        'raisin': '#18051c'
+        'raisin': '#18051c',
+        'emerald': {
+          DEFAULT: '#4CFACC',
+          light: '#9CFCE3',
+          dark: '#06D6A0'
+        }
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

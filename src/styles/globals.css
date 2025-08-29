@@ -108,6 +108,14 @@
     @apply bg-gradient-to-r to-goldenrod from-goldenrod-dark text-ghost w-full p-2
   }
 
+  .reverse-emerald {
+    @apply bg-gradient-to-r to-emerald from-emerald-dark text-black w-full p-2
+  }
+
+  .reverse-emerald-light {
+    @apply bg-gradient-to-r to-emerald-light from-emerald text-black w-full p-2
+  }
+
   .class-col-layout {
     @apply md:grid md:grid-flow-col md:gap-8 md:grid-cols-2
   }

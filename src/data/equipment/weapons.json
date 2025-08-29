@@ -1,0 +1,85 @@
+{
+  "Baseball Bat": {
+    "damage": "1d8",
+    "damageType": "bludgeoning",
+    "uses": 4,
+    "properties": "Light, Two-handed"
+  },
+  "Hatchet": {
+    "damage": "1d6",
+    "damageType": "slashing",
+    "uses": 10,
+    "properties": "Light, Thrown (20/60)"
+  },
+  "Pipe": {
+    "damage": "1d6 (1d8)",
+    "damageType": "bludgeoning",
+    "uses": 5,
+    "properties": "Versatile (can be used 1 or 2 handed, refer to damage value in parentheses for two-handed damage)"
+  },
+  "Machete": {
+    "damage": "1d8",
+    "damageType": "slashing, + weaker bleeding",
+    "uses": 8,
+    "properties": "Finesse, Light"
+  },
+  "Shovel": {
+    "damage": "1d10",
+    "damageType": "bludgeoning",
+    "uses": 5,
+    "properties": "Heavy, Two-handed"
+  },
+  "2 by 4": {
+    "damage": "1d8",
+    "damageType": "bludgeoning",
+    "uses": 2,
+    "properties": "Heavy, Two-handed"
+  },
+  "Shiv": {
+    "damage": "1d4 (1d6)",
+    "damageType": "piercing, + weaker bleeding",
+    "uses": 1,
+    "properties": "Light, Versatile (can be used 1 or 2 handed, refer to damage value in parentheses for two-handed damage), Craftable"
+  },
+  "Melee Weapon Upgrade": {
+    "damage": "+2 damage",
+    "damageType": "+ weaker bleeding",
+    "uses": 2,
+    "properties": "Craftable"
+  },
+  "Handgun": {
+    "damage": "1d8",
+    "damageType": "piercing, + weaker bleeding",
+    "attackBonus": "+2 to hit",
+    "properties": "Light, One-handed, Ammunition (15 bullets), Range (50/150)"
+  },
+  "Revolver": {
+    "damage": "1d10",
+    "damageType": "piercing, + weaker bleeding",
+    "attackBonus": "+1 to hit",
+    "properties": "Light, One-handed, Ammunition (6 bullets), Range (40/120)"
+  },
+  "Hunting Rifle": {
+    "damage": "2d8",
+    "damageType": "piercing, + heavy bleeding",
+    "attackBonus": "+3 to hit",
+    "properties": "Heavy, Two-handed, Ammunition (6 bullets), Range (80/240)"
+  },
+  "Bow": {
+    "damage": "1d8",
+    "damageType": "piercing, + weaker bleeding",
+    "attackBonus": "+3 to hit",
+    "properties": "Light, Two-handed, Quiet, Ammunition (1 arrow), Range (150/600)"
+  },
+  "Shotgun": {
+    "damage": "2d10",
+    "damageType": "piercing, + heavy bleeding",
+    "attackBonus": "+2 to hit",
+    "properties": "Heavy, Two-handed, Ammunition (7 shells), Range (30/90)"
+  },
+  "Hunting Knife": {
+    "damage": "1d4",
+    "damageType": "piercing, + weaker bleeding",
+    "properties": "Light, Thrown (20/60)"
+  }
+}

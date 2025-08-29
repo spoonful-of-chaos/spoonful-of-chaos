@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card } from "./Card";
+import { Card } from "../general/Card";
 import { SpellContent } from "./SpellContent";
 
 export const SpellMenu = ({ tabs, list, listHandler }: { tabs: Record<string, Record<string, any>>, list: Record<string, any>, listHandler: any }) => {
@@ -61,7 +61,7 @@ export const SpellMenu = ({ tabs, list, listHandler }: { tabs: Record<string, Re
       </div>
       <div className={`border-b-4 border-${tabs[tab].color} flex gap-1`}>
         {Object.keys(tabs).map((t: string, i: number) => (
-          <button type="button" key={`category-${t}-${i}`} onClick={() => handleTabClick(t)} className={`bg-${t === tab ? tabs[t].color : 'ghost'} hover:bg-${tabs[t].color} text-black rounded-t font-display py-1 px-2`}>{tabs[t].label}</button>
+          <button type="button" key={`category-${t}-${i}`} onClick={() => handleTabClick(t)} className={`bg-${t === tab ? tabs[t].color : 'ghost'} text-black rounded-t font-display py-1 px-2`}>{tabs[t].label}</button>
         ))}
       </div>
       <div className="bg-ghost text-black py-4 md:grid md:grid-cols-4 md:grid-flow-col">

@@ -1,4 +1,4 @@
-import { SpellMenu } from "@/components/general/SpellMenu";
+import { SpellMenu } from "@/components/dnd/SpellMenu";
 import { tabs } from "@/utils/craftingconfig";
 import { useRouter } from "next/router";
 import { usePathname, useSearchParams } from "next/navigation"

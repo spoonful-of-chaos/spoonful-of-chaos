@@ -1,7 +1,7 @@
 import { StatBlock } from "@/components/dnd/StatBlock";
 import { Filter, FilterConfig } from "@/components/general/Filter";
 import { getSortedCreatureData } from "@/lib/creatures";
-import { Creature } from "@/lib/types";
+import { Creature, CreatureTypes } from "@/lib/types";
 import { useState } from "react";
 
 const Appendix = ({ allCreatureData }: { allCreatureData: Creature[] }) => {
@@ -83,7 +83,15 @@ const Appendix = ({ allCreatureData }: { allCreatureData: Creature[] }) => {
       <div className="mt-6 md:columns-3 md:gap-4">
         {creatures.map((c: Creature) => (
           <div className="mb-4 w-full break-inside-avoid-column" key={`creature-appendix-${c.id}`}>
-            <StatBlock creature={c} variant="moonstone" />
+            {c.type === CreatureTypes.infected && (
+              <StatBlock creature={c} variant="emerald-light" />
+            )}
+            {c.type === CreatureTypes.human && (
+              <StatBlock creature={c} variant="moonstone-light" />
+            )}
+            {c.type === CreatureTypes.beast && (
+              <StatBlock creature={c} variant="crayola-light" />
+            )}
           </div>
         ))}
       </div>

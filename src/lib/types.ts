@@ -7,6 +7,14 @@ export enum StatTypes {
   CHA = 'Charisma'
 }
 
+export enum CreatureTypes {
+  infected = 'infected',
+  human = 'human',
+  beast = 'beast'
+}
+
+type CreatureTypeKeys = keyof typeof CreatureTypes;
+
 export type StatTypeKeys = keyof typeof StatTypes;
 
 export type Stat = {
@@ -37,7 +45,7 @@ export type Creature = {
   speed: string,
   stats: Stat,
   title: string,
-  type: string,
+  type: CreatureTypeKeys,
   immunities?: {
     damage: string,
     condition: string

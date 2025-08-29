@@ -1,6 +1,6 @@
 const isProd = process.env.NODE_ENV === "production";
 
-const nextConfig = {
+module.exports = {
   output: "export",
   images: {
     unoptimized: true, // GitHub Pages doesn't support Next.js image optimizer
@@ -8,5 +8,3 @@ const nextConfig = {
   basePath: isProd ? "/<your-repo-name>" : "",
   assetPrefix: isProd ? "/<your-repo-name>/" : "",
 };
-
-export default nextConfig;

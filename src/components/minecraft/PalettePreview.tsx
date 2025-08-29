@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import { ImageWrapper } from '../general/ImageWrapper';
 
 export const PreviewTexture = ({ t, clearPreview }: any) => {
   return (
     <button className='flex-col justify-center' type="button" onClick={() => clearPreview(t.texture_path)} >
-      <Image
+      <ImageWrapper
         src={`/minecraft_textures/${t.texture_path}`}
         alt={t.name}
         width="200"
@@ -18,7 +18,7 @@ export const PreviewTexture = ({ t, clearPreview }: any) => {
 export const PreviewTitle = ({ t }: any) => {
   return (
     <div className='flex items-center space-x-1'>
-      <Image
+      <ImageWrapper
         src={`/minecraft_textures/${t.texture_path}`}
         alt={t.name}
         width="20"

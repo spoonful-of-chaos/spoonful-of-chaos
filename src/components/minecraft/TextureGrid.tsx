@@ -1,13 +1,13 @@
-import Image from 'next/image';
 import { useState } from 'react';
 import { Filter } from '../general/Filter';
 import { Search } from '../general/Search';
+import { ImageWrapper } from '../general/ImageWrapper';
 
 const Texture = ({ t, setPreview }: any) => {
   return (
     <div style={{ maxWidth: '100px' }}>
       <button className='flex-col justify-center' type="button" onClick={() => setPreview(t.texture_path)} >
-        <Image
+        <ImageWrapper
           src={`/minecraft_textures/${t.texture_path}`}
           alt={t.name}
           width="100"

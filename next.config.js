@@ -1,23 +1,12 @@
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-let assetPrefix = ''
-let basePath = ''
-
-if (isGithubActions) {
-  // trim off `<owner>/`
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-}
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   output: "export",
   images: {
-    unoptimized: true
+    unoptimized: true, // GitHub Pages doesn't support Next.js image optimizer
   },
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-  reactStrictMode: true,
-}
+  basePath: isProd ? "/<your-repo-name>" : "",
+  assetPrefix: isProd ? "/<your-repo-name>/" : "",
+};
 
-module.exports = nextConfig;
+export default nextConfig;

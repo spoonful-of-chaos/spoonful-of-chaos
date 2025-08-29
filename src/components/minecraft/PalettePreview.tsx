@@ -9,6 +9,7 @@ export const PreviewTexture = ({ t, clearPreview }: any) => {
         width="200"
         height="200"
         className='pixelated'
+        unoptimized
       />
     </button>
   )

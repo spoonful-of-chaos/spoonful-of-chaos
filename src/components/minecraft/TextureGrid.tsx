@@ -13,6 +13,7 @@ const Texture = ({ t, setPreview }: any) => {
           width="100"
           height="100"
           className='pixelated'
+          unoptimized
         />
         <p className='text-xs m-0 flex flex-wrap'>{t.name}</p>
       </button>

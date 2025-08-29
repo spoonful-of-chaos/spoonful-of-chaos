@@ -7,7 +7,7 @@ export const LastofUsHero = () => {
         <h1>The Last of Us D&D 5e</h1>
         <p className="text-ghost mt-4">A comprehensive overhaul of Dungeons & Dragons 5th edition for a <span className="italic">Last of Us</span> campaign setting.</p>
       </div>
-      <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-6 mt-12">
+      <div className="w-full flex flex-col md:grid md:grid-cols-3 md:gap-6 mt-6">
         <NavigationButton link="/lou5e/characters">
           Characters & Classes
         </NavigationButton>

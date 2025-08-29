@@ -124,6 +124,10 @@
     @apply bg-[url('/_next/static/media/new_logo.1aa05d07.png')] bg-center bg-contain bg-no-repeat
   }
 
+  .pixelated {
+    image-rendering: pixelated;
+  }
+
 }
 
 :root {

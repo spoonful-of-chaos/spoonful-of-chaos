@@ -5,6 +5,8 @@ import three from '@/data/crafting/levelthree.json';
 
 import weapons from '@/data/equipment/weapons.json';
 
+import mc_textures from '@/data/mc/mc_textures.json';
+
 export const crafts = {
   cantrips,
   one,
@@ -14,4 +16,8 @@ export const crafts = {
 
 export const equipment = {
   weapons,
+}
+
+export const minecraft: any = {
+  mc_textures,
 }

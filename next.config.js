@@ -12,6 +12,9 @@ if (isGithubActions) {
 
 const nextConfig = {
   output: "export",
+  images: {
+    unoptimized: true
+  },
   assetPrefix: assetPrefix,
   basePath: basePath,
   reactStrictMode: true,

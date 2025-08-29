@@ -42,7 +42,7 @@ export const PalettePreview = ({ preview, clearPreview }: { preview: Record<any,
         </div>
       </div>
       <div className='flex-col space-y-2'>
-        {preview.map((t: any) => <PreviewTitle t={t} />)}
+        {preview.map((t: any) => <PreviewTitle key={t.texture_path} t={t} />)}
       </div>
     </div>
   )
